@@ -1,5 +1,8 @@
 # 设计模式原则
 
+## pdf链接
+[设计模式原则课程链接](https://subingwen.cn/design-patterns/three-principles/)
+
 ## 单一职责原则
 
 单一职责原则（Single Responsibility Principle）是指一个类应该只负责一项职责，一个类应该只有一个引起它变化的原因。
