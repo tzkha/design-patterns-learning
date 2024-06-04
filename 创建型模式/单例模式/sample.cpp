@@ -63,10 +63,10 @@ private:
 
 TaskQueue* TaskQueue::m_taskQ = new TaskQueue();
 int main(){
-    TaskQueue* taskq = TaskQueue::getInstance();
     //taskq->print();
     //生产者
     thread t1([=](){
+        TaskQueue* taskq = TaskQueue::getInstance();
         for(int i = 0; i < 100; i++){
             taskq->addTask(i);
             cout<<" +++ push data: "<< i <<"thread id :"<< this_thread::get_id() << endl;
@@ -75,6 +75,7 @@ int main(){
     });
     //消费者
     thread t2([=](){
+        TaskQueue* taskq = TaskQueue::getInstance();
         this_thread::sleep_for(chrono::milliseconds(1000));
         while(!taskq->isEmpty()){
             int num = taskq->getTask();
