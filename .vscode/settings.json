@@ -60,6 +60,7 @@
     "thread": "cpp",
     "atomic": "cpp",
     "new": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "string": "cpp"
   }
 }
