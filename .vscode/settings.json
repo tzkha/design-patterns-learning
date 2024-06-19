@@ -61,6 +61,7 @@
     "atomic": "cpp",
     "new": "cpp",
     "vector": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "iostream": "cpp"
   }
 }
