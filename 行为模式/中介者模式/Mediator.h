@@ -1,3 +1,4 @@
+#pragma once
 #include "Country.h"
 
 class Country;
